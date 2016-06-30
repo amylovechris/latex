@@ -1,0 +1,21 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\ctexset{section={
+name={第,节},
+number=\arabic{section},
+}
+}
+\usepackage{fancyhdr}
+\fancyhf{}
+\lhead{\textnormal{\kaishu\rightmark}}
+\rhead{--\ \thepage\ --}
+\pagestyle{fancy}
+% \sectionmark 的重定义需要在\pagestyle 之后生效
+\renewcommand\sectionmark[1]{%
+\markright{\CTEXthesection——#1}}
+\begin{document}
+\section{天地玄黄}
+\newpage
+\section{宇宙洪荒}
+\end{document}
